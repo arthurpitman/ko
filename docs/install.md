@@ -62,7 +62,7 @@ apk add ko
 With Go 1.16+, build and install the latest released version:
 
 ```plaintext
-go install github.com/google/ko@latest
+go install github.com/arthurpitman/ko@latest
 ```
 
 ### Setup on GitHub Actions

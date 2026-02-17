@@ -20,10 +20,10 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/arthurpitman/ko/pkg/build"
+	"github.com/arthurpitman/ko/pkg/publish"
 	"github.com/google/go-containerregistry/pkg/name"
 	v1 "github.com/google/go-containerregistry/pkg/v1"
-	"github.com/google/ko/pkg/build"
-	"github.com/google/ko/pkg/publish"
 )
 
 type fixedBuild struct {

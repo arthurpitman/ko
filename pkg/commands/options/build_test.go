@@ -20,7 +20,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/google/ko/pkg/build"
+	"github.com/arthurpitman/ko/pkg/build"
 	"github.com/spf13/cobra"
 	"github.com/stretchr/testify/require"
 )
@@ -136,10 +136,10 @@ func TestCreateBuildConfigs(t *testing.T) {
 		for importPath, buildCfg := range buildConfigMap {
 			switch buildCfg.ID {
 			case "defaults":
-				compare("github.com/google/ko", importPath)
+				compare("github.com/arthurpitman/ko", importPath)
 
 			case "OnlyMain", "OnlyMainWithFile", "OnlyDir", "DirAndMain":
-				compare("github.com/google/ko/test", importPath)
+				compare("github.com/arthurpitman/ko/test", importPath)
 
 			default:
 				t.Fatalf("unknown test case: %s", buildCfg.ID)

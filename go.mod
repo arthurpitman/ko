@@ -1,4 +1,4 @@
-module github.com/google/ko
+module github.com/arthurpitman/ko
 
 go 1.25.0
 
